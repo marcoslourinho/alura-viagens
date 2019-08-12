@@ -1,4 +1,5 @@
 <?php include_once("includes/header.php") ?>
+<?php require_once("controller/ComprasController.php"); ?>
 
 <div class="bg-hero">
     <div class="bg-overlay"></div>
@@ -32,28 +33,28 @@
                                             <tbody>
                                                 <tr>
                                                     <td class='text-center'>
-                                                        John Doe
+                                                        <?php echo $cliente->nome ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        123.456.789-10
+                                                        <?php echo $cliente->cpf_cnpj; ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        (99) 99999-9999
+                                                        <?php echo $cliente->telefone ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        10/10/2019
+                                                        <?php echo $viagem->data_ida ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        10/11/2019
+                                                        <?php echo $viagem->data_volta ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        R$ 1.500,00
+                                                        <?php echo $viagem->preco ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        johndoe@mail.com
+                                                        <?php echo $cliente->email ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        66.666-666
+                                                        <?php echo $cliente->cep ?>
                                                     </td>
                                                 </tr>
                                             </tbody>
